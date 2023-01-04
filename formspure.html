@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <title>FORMS</title>
+</head>
+
+<body>
+
+    <form class="pure-form">
+        <fieldset>
+            <legend>formulário padrão - em linha e compacto</legend>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <label for="default-remember">
+                <input type="checkbox" id="default-remember" /> Remember me
+            </label>
+            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>Formulario Empilhado</legend>
+            <label for="stacked-email">Email</label>
+            <input type="email" id="stacked-email" placeholder="Email" />
+            <span class="pure-form-message">este é um campo obrigatorio</span>
+            <label for="stacked-password">Senha</label>
+            <input type="password" id="stacked-password" placeholder="Password" />
+            <label for="stacked-state">Estado</label>
+            <select id="stacked-state">
+                <option>SP</option>
+                <option>RJ</option>
+                <option>MG</option>
+            </select>
+            <label for="stacked-remember" class="pure-checkbox">
+                <input type="checkbox" id="stacked-remember" />Lembrar Depois
+            </label>
+            <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+
+
+
+    <form class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <legend>Formulario Alinhado</legend>
+                <label for="aligned-name">Username</label>
+                <input type="text" id="aligned-name" placeholder="Username" />
+                <span class="pure-form-message-inline">este é um campo obrigatorio</span>
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-password">Password</label>
+                <input type="password" id="aligned-password" placeholder="Password" />
+            </div>
+            <div class="pure-control-group">
+                <label for="aligned-email">Email Address</label>
+                <input type="email" id="aligned-email" placeholder="Email Address" />
+            </div>
+            <div class="pure-controls">
+                <label for="aligned-cb" class="pure-checkbox">
+                    <input type="checkbox" id="aligned-cb" /> Eu li os termos e condições
+                </label>
+                <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>Formulário de várias colunas (com Pure Grids)</legend>
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="multi-first-name">Primeiro Nome</label>
+                    <input type="text" id="multi-first-name" class="pure-u-23-24" />
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="multi-last-name">Ultimo Nome</label>
+                    <input type="text" id="multi-last-name" class="pure-u-23-24" />
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="multi-email">E-Mail</label>
+                    <input type="email" id="multi-email" class="pure-u-23-24" required="" />
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="multi-city">Cidade</label>
+                    <input type="text" id="multi-city" class="pure-u-23-24" />
+                </div>
+                <div class="pure-u-1 pure-u-md-1-3">
+                    <label for="multi-state">State</label>
+                    <select id="multi-state" class="pure-input-1-2">
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>BA</option>
+                    </select>
+                </div>
+            </div>
+            <label for="multi-terms" class="pure-checkbox">
+                <input type="checkbox" id="multi-terms" /> Eu li os termos e condições
+            </label>
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form">
+        <fieldset class="pure-group">
+            <legend>Inputs Agrupados</legend>
+            <input type="text" class="pure-input-1-2" placeholder="Username" />
+            <input type="text" class="pure-input-1-2" placeholder="Password" />
+            <input type="email" class="pure-input-1-2" placeholder="Email" />
+        </fieldset>
+        <fieldset class="pure-group">
+            <input type="text" class="pure-input-1-2" placeholder="A title" />
+            <textarea class="pure-input-1-2" placeholder="Textareas work too"></textarea>
+        </fieldset>
+        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
+    </form>
+    <form class="pure-form">
+        <input type="text" class="pure-input-1" placeholder=".pure-input-1" />
+        <br />
+        <input type="text" class="pure-input-2-3" placeholder=".pure-input-2-3" />
+        <br />
+        <input type="text" class="pure-input-1-2" placeholder=".pure-input-1-2" />
+        <br />
+        <input type="text" class="pure-input-1-3" placeholder=".pure-input-1-3" />
+        <br />
+        <input type="text" class="pure-input-1-4" placeholder=".pure-input-1-4" />
+        <br />
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form pure-g">
+        <legend>Dimensionamento de Entrada</legend>
+        <div class="pure-u-1-4">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-4" />
+        </div>
+        <div class="pure-u-3-4">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-3-4" />
+        </div>
+        <div class="pure-u-1-2">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-2" />
+        </div>
+        <div class="pure-u-1-2">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-2" />
+        </div>
+        <div class="pure-u-1-8">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-8" />
+        </div>
+        <div class="pure-u-1-8">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-8" />
+        </div>
+        <div class="pure-u-1-4">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-4" />
+        </div>
+        <div class="pure-u-1-2">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-2" />
+        </div>
+        <div class="pure-u-1-5">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1-5" />
+        </div>
+        <div class="pure-u-2-5">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-2-5" />
+        </div>
+        <div class="pure-u-2-5">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-2-5" />
+        </div>
+        <div class="pure-u-1">
+            <input type="text" class="pure-input-1" placeholder=".pure-u-1" />
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form class="pure-form">
+        <legend>Input - Obrigatorio</legend>
+        <input type="email" placeholder="Requires an email" required="" />
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form">
+        <legend>Input - Desabilitado</legend>
+        <input type="text" placeholder="Disabled input here..." disabled="" />
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form">
+        <legend>Input - Somente Leitura</legend>
+        <input type="text" value="Readonly input here..." readonly="" />
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form">
+        <legend>Input - Bordas Arredondadas</legend>
+        <input type="text" class="pure-input-rounded" />
+        <button type="submit" class="pure-button">Procurar</button>
+    </form>
+    <br>
+    <br>
+    <br>
+
+    <form class="pure-form">
+        <legend>Botoes de opções e Caixas de seleção</legend>
+        <label for="checkbox-radio-option-one" class="pure-checkbox">
+            <input type="checkbox" id="checkbox-radio-option-one" value="" /> Opção 1.
+        </label>
+        <label for="checkbox-radio-option-one" class="pure-checkbox">
+            <input type="checkbox" id="checkbox-radio-option-one" value="" /> Opção 2.
+        </label>
+        <label for="checkbox-radio-option-one" class="pure-checkbox">
+            <input type="checkbox" id="checkbox-radio-option-one" value="" /> Opção 3.
+        </label>
+        <label for="checkbox-radio-option-two" class="pure-radio">
+            <input type="radio" id="checkbox-radio-option-two" name="optionsRadios" value="option1" checked="" /> Botão de opção. Você pode escolher este...
+        </label>
+        <label for="checkbox-radio-option-three" class="pure-radio">
+            <input type="radio" id="checkbox-radio-option-three" name="optionsRadios" value="option2" /> ... Ou este!
+        </label>
+    </form>
+    
+
+
+
+</body>
+
+</html>
